@@ -1,0 +1,116 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/xKiALrrPwKwQCmPyylUs",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25pa1a45c7-tech/python__lab/blob/main/week-7\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8T7m-PBgYmny",
+        "outputId": "48d7122b-d443-4522-d821-cdfde3e05779"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 20\n",
+            "100\n",
+            "10 20\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = 10 # global variable\n",
+        "b = 20\n",
+        "print(a, b)\n",
+        "def func():\n",
+        "  c = 100 # local\n",
+        "  print(c)\n",
+        "  print(a, b)\n",
+        "func()"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 10 # golbal variable\n",
+        "b = 20 # golbal variable\n",
+        "print(a, b)\n",
+        "def func():\n",
+        "   c = 100 # local\n",
+        "   global a # to change the value of golbal variable\n",
+        "   a = 110\n",
+        "   print(c)\n",
+        "   print(a, b)\n",
+        "func()\n",
+        "print(a, b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-HK6Cgb_dT9p",
+        "outputId": "c153ff6b-c963-434e-ce68-4cb1b79c77d8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 20\n",
+            "100\n",
+            "110 20\n",
+            "110 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "XXBqLQxFkjnk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "pvSyidd0k6RB"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
